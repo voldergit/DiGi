@@ -1,1 +1,2 @@
 # DiGi
+Mobile first
