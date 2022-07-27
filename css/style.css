@@ -1054,4 +1054,15 @@ body {
     font-size: 24px;
     line-height: 28px;
   }
+}
+.footer {
+  background-color: #2b4074;
+  color: #ffffff;
+}
+.footer__inner {
+  padding: 15px 0 60px;
+  text-align: center;
+}
+.footer__logo {
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
