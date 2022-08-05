@@ -887,6 +887,7 @@
     }
   }
 }
+
 .footer {
   background-color: $accent;
   color: #ffffff;
@@ -896,5 +897,126 @@
   }
   &__logo {
     margin-bottom: 60px;
+  }
+  &__text {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
+  &__social {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-link {
+      margin-bottom: 16px;
+    }
+  }
+  &__block {
+    margin-bottom: 35px;
+    &-title {
+      margin-bottom: 20px;
+      @extend %robotocondensed-700;
+      color: $bg-color;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: 2px;
+    }
+    &-item {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__up {
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color;
+    position: relative;
+    &-text {
+      color: $text-color;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2px;
+      &::after {
+        content: url(../images/arrow-up.svg);
+        width: 16px;
+        height: 15px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        bottom: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 640px) {
+  .footer {
+    &__inner {
+      padding: 20px 0 130px;
+    }
+    &__logo {
+      margin-bottom: 55px;
+    }
+    &__text {
+      margin-bottom: 40px;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__social {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      &-link {
+        padding: 17px 60px;
+        border: 1px solid #7ebf84;
+        border-left: none;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+    &__block {
+      margin-bottom: 35px;
+      &-title {
+        margin-bottom: 20px;
+        @extend %robotocondensed-700;
+        color: $bg-color;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 2px;
+      }
+      &-item {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    &__up {
+      min-height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $bg-color;
+      position: relative;
+      &-text {
+        color: $text-color;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        &::after {
+          content: url(../images/arrow-up.svg);
+          width: 16px;
+          height: 15px;
+          position: absolute;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+          bottom: 20px;
+        }
+      }
+    }
   }
 }
