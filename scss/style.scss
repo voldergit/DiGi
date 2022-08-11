@@ -979,43 +979,92 @@
         }
       }
     }
+    &__menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
     &__block {
-      margin-bottom: 35px;
-      &-title {
-        margin-bottom: 20px;
-        @extend %robotocondensed-700;
-        color: $bg-color;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: 2px;
-      }
-      &-item {
-        font-size: 16px;
-        line-height: 20px;
-      }
+      margin-bottom: 25px;
+      width: 50%;
     }
     &__up {
-      min-height: 140px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $bg-color;
-      position: relative;
+      min-height: 42px;
+      justify-content: end;
       &-text {
-        color: $text-color;
-        font-size: 16px;
-        line-height: 19px;
+        margin-right: 60px;
         letter-spacing: 2px;
         &::after {
-          content: url(../images/arrow-up.svg);
-          width: 16px;
-          height: 15px;
-          position: absolute;
-          right: 0;
-          left: 0;
-          margin: 0 auto;
-          bottom: 20px;
+          right: 25px;
+          top: 12px;
+          left: auto;
         }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    &__inner {
+      padding: 15px 0 50px;
+    }
+    &__logo {
+      margin-bottom: 90px;
+    }
+    &__text {
+      text-align: left;
+      font-size: 36px;
+      line-height: 32px;
+    }
+    &__social-link {
+      padding: 20px 76px;
+    }
+    &__block {
+      text-align: left;
+      padding-left: 10px;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    &__inner {
+      padding: 20px 0 80px;
+    }
+    &__logo {
+      margin-bottom: 100px;
+    }
+    &__social-link {
+      padding: 20px 108px;
+    }
+    &__menu {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__block {
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .footer {
+    &__inner {
+      padding: 20px 20px 80px;
+    }
+    &__logo {
+      margin-bottom: 110px;
+    }
+    &__text {
+      width: 710px;
+    }
+    &__social-link {
+      padding: 20px 140px;
+    }
+    &__up-text {
+      margin-right: 175px;
+      &::after {
+        right: 125px;
       }
     }
   }

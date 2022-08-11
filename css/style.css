@@ -1145,42 +1145,86 @@ body {
   .footer__social-link:last-child {
     border-right: none;
   }
+  .footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .footer__block {
-    margin-bottom: 35px;
-  }
-  .footer__block-title {
-    margin-bottom: 20px;
-    color: #f9f6e5;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 2px;
-  }
-  .footer__block-item {
-    font-size: 16px;
-    line-height: 20px;
+    margin-bottom: 25px;
+    width: 50%;
   }
   .footer__up {
-    min-height: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f6e5;
-    position: relative;
+    min-height: 42px;
+    justify-content: end;
   }
   .footer__up-text {
-    color: #4a4a4a;
-    font-size: 16px;
-    line-height: 19px;
+    margin-right: 60px;
     letter-spacing: 2px;
   }
   .footer__up-text::after {
-    content: url(../images/arrow-up.svg);
-    width: 16px;
-    height: 15px;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    bottom: 20px;
+    right: 25px;
+    top: 12px;
+    left: auto;
+  }
+}
+@media (min-width: 768px) {
+  .footer__inner {
+    padding: 15px 0 50px;
+  }
+  .footer__logo {
+    margin-bottom: 90px;
+  }
+  .footer__text {
+    text-align: left;
+    font-size: 36px;
+    line-height: 32px;
+  }
+  .footer__social-link {
+    padding: 20px 76px;
+  }
+  .footer__block {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__inner {
+    padding: 20px 0 80px;
+  }
+  .footer__logo {
+    margin-bottom: 100px;
+  }
+  .footer__social-link {
+    padding: 20px 108px;
+  }
+  .footer__menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer__block {
+    text-align: left;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__inner {
+    padding: 20px 20px 80px;
+  }
+  .footer__logo {
+    margin-bottom: 110px;
+  }
+  .footer__text {
+    width: 710px;
+  }
+  .footer__social-link {
+    padding: 20px 140px;
+  }
+  .footer__up-text {
+    margin-right: 175px;
+  }
+  .footer__up-text::after {
+    right: 125px;
   }
 }/*# sourceMappingURL=style.css.map */
